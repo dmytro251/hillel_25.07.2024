@@ -17,3 +17,4 @@ else:
           else:
               return_number = _number // 10000
               print(f'{0}{0}{0}{0}{return_number}')
+
