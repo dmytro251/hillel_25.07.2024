@@ -1,6 +1,6 @@
 lst = [1, 2, 3, 4, 5]
 size = len(lst)
-if not size :
+if not size:
     lst_2 = []
     lst_3 = []
     lst_final = lst_2 + lst_3
