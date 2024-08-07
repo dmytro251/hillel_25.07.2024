@@ -1,23 +1,23 @@
-lst = [1, 2, 3, 4, 5,9]
-size = len(lst)
-if not size:
-    lst_2 = []
-    lst_3 = []
-    lst_final = lst_2 + lst_3
-    print(lst_2)
-    print(lst_3)
-    print(lst_final)
-elif not size % 2:
-    lst_2 = lst[:size // 2]
-    lst_3 = lst[size // 2:]
-    lst_final = lst_2 + lst_3
-    print(lst_2)
-    print(lst_3)
-    print(lst_final)
+main_list = []
+first_list = []
+second_list = []
+final_list = []
+
+if not len(main_list):
+    final_list.append(first_list)
+    final_list.append(second_list)
+    print(final_list)
+
+elif not len(main_list) % 2:
+    first_list = main_list[:len(main_list)//2]
+    second_list = main_list[len(main_list)//2:]
+    final_list.append(first_list)
+    final_list.append(second_list)
+    print(final_list)
+
 else:
-    lst_2 = lst[: size // 2 + 1]
-    lst_3 = lst[size // 2 + 1:]
-    lst_final = lst_2 + lst_3
-    print(lst_2)
-    print(lst_3)
-    print(lst_final)
+    first_list = main_list[:len(main_list)//2+1]
+    second_list = main_list[len(main_list)//2+1:]
+    final_list.append(first_list)
+    final_list.append(second_list)
+    print(final_list)
