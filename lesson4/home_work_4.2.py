@@ -12,3 +12,4 @@ else:
         if not i % 2:
             _sum += el
     print(_sum * my_list[-1])
+
