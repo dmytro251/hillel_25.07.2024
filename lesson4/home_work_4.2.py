@@ -1,4 +1,4 @@
-my_list = [0, 1, 7, 2, 4, 8]
+my_list = [1, 3, 5]
 
 if my_list == []:
     print(0)

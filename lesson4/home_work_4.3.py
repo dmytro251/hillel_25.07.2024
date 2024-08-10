@@ -7,6 +7,5 @@ _list.append(my_list[0])
 _list.append(my_list[2])
 _list.append(my_list[-2])
 
-print(my_list)
-print(_list)
+print(my_list, "=>", _list)
 
