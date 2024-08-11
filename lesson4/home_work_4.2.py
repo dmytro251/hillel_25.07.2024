@@ -1,10 +1,7 @@
-my_list = [1, 3, 5]
+my_list = [2]
 
-if my_list == []:
+if not my_list:
     print(0)
-
-elif len(my_list) == 1:
-    print(my_list[0] ** 2)
 
 else:
     _sum = 0
