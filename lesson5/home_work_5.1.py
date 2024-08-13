@@ -9,7 +9,7 @@ for signs in variable_name:
     if signs in string.punctuation and signs != "_" or signs == " ":
         print("\nFalse")
         break
-    elif variable_name[0] in _numbers:
+    elif signs in _numbers:
         print("\nFalse")
         break
     elif variable_name.count("_") == len(variable_name) > 1:

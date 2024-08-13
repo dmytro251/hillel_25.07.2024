@@ -5,19 +5,19 @@ while True:
     operation = input("Виберіть операцію(+,-,*,/):")
 
     if operation == "+":
-        suma = number_one + number_two
-        print(f"\n{number_one}+{number_two}={suma}")
+        _sum = number_one + number_two
+        print(f"\n{number_one}+{number_two}={_sum}")
     elif operation == "-":
-        vid = number_one - number_two
-        print(f"\n{number_one}-{number_two}={vid}")
+        difference = number_one - number_two
+        print(f"\n{number_one}-{number_two}={difference}")
     elif operation == "*":
-        mn = number_one * number_two
-        print(f"\n{number_one}*{number_two}={mn}")
+        product = number_one * number_two
+        print(f"\n{number_one}*{number_two}={product}")
     elif operation == "/" and not number_two:
         print("\nДілення на нуль не можливе")
     elif operation == "/":
-        dil = number_one / number_two
-        print(f"\n{number_one}/{number_two}={dil}")
+        fraction = number_one / number_two
+        print(f"\n{number_one}/{number_two}={fraction}")
     else:
         print("\nДія не можлива")
 
