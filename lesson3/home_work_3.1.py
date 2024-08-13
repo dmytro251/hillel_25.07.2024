@@ -1,8 +1,8 @@
 
 while True:
-    number_one = int(input("Введіть першу цифру: "))
-    number_two = int(input("Введіть другу цифру: "))
-    operation = input("Виберіть операцію(+,-,*,/):")
+    number_one = int(input("Enter the first number: "))
+    number_two = int(input("Enter the second number: "))
+    operation = input("Select an operation(+,-,*,/):")
 
     if operation == "+":
         _sum = number_one + number_two
@@ -14,12 +14,12 @@ while True:
         product = number_one * number_two
         print(f"\n{number_one}*{number_two}={product}")
     elif operation == "/" and not number_two:
-        print("\nДілення на нуль не можливе")
+        print("\nDivision by zero is not possible")
     elif operation == "/":
         fraction = number_one / number_two
         print(f"\n{number_one}/{number_two}={fraction}")
     else:
-        print("\nДія не можлива")
+        print("\nAction is not possible")
 
     the_end = input("\nType y to continue or any character to exit: ")
     if the_end != "y" or the_end != "Y":
