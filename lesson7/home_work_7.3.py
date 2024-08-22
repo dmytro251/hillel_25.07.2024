@@ -6,7 +6,7 @@ def second_index(text:str, some_str:str) -> Optional[int]:
     _index = text.find(some_str, _index + 1) \
         if text.find(some_str, _index + 1) >= 0 else None
     return _index
-#print(second_index("hi", "h"))
+
 
 assert second_index("sims", "s") == 3, 'Test1'
 assert second_index("find the river", "e") == 12, 'Test2'
