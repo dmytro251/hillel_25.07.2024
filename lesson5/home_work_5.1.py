@@ -1,6 +1,7 @@
 import string
 import keyword
 
+
 variable_name = input("Enter a name for the variable: ")
 result = "\nTrue"
 _numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
