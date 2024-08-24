@@ -22,5 +22,5 @@ while True:
         print("\nAction is not possible")
 
     the_end = input("\nType y to continue or any character to exit: ")
-    if the_end != "y" or the_end != "Y":
+    if the_end != "y" and the_end != "Y":
         break
