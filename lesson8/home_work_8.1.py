@@ -1,6 +1,5 @@
 def add_one(some_list: list[int]) -> list[int]:
     number = 0
-
     for index, element in enumerate(some_list):
         number += element * 10 ** (len(some_list) - index - 1)
 
