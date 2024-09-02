@@ -1,5 +1,5 @@
 def is_even(digit: int) -> bool:
-    if digit == 0 or digit % 2 == 0:
+    if not digit or not digit % 2:
         return True
     else:
         return False
