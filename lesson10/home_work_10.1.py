@@ -1,8 +1,9 @@
-from operator import index
+from inspect import isgenerator
 
 
-def pow_(x):
+def pow_(x: int) -> int:
     return x ** 2
+
 
 def some_gen(begin: int, end: int, func) -> int:
     count = 0
@@ -11,7 +12,6 @@ def some_gen(begin: int, end: int, func) -> int:
         begin = func(begin)
         count += 1
 
-from inspect import isgenerator
 
 gen = some_gen(2, 4, pow_)
 assert isgenerator(gen) == True, 'Test1'
