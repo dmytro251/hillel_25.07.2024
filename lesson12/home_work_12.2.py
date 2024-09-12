@@ -10,6 +10,7 @@ class Item:
     def __str__(self) -> str:
         return f"{self.name} price: {self.price}"
 
+
 class User:
 
     def __init__(self, name: str, surname: str, numberphone: str):
@@ -19,6 +20,7 @@ class User:
 
     def __str__(self) -> str:
         return f"{self.name} {self.surname}"
+
 
 class Purchase:
     def __init__(self, user):
@@ -40,6 +42,7 @@ class Purchase:
         for product_name in self.products:
             suma += self.products[product_name] * Item.product[product_name]
         return suma
+
 
 lemon = Item('lemon', 5, "yellow", "small", )
 apple = Item('apple', 2, "red", "middle", )
