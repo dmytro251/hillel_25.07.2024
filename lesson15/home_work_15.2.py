@@ -1,5 +1,5 @@
 class Fraction:
-    def __init__(self, a, b):
+    def __init__(self, a: int, b: int):
         self.a = a
         self.b = b
 
@@ -12,16 +12,16 @@ class Fraction:
     def __sub__(self, other):
         return Fraction(self.a * other.b - other.a * self.b, self.b * other.b)
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.a/self.b == other.a/other.b
 
-    def __gt__(self, other):
+    def __gt__(self, other) -> bool:
         return self.a / self.b > other.a / other.b
 
-    def __lt__(self, other):
+    def __lt__(self, other) -> bool:
         return self.a / self.b < other.a / other.b
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Fraction: {self.a}, {self.b}"
 
 

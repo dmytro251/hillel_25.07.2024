@@ -8,17 +8,17 @@ class Rectangle:
         return self.width * self.height
 
     @staticmethod
-    def finding_width_and_height(ploshcha: int):
-        if not ploshcha % 5:
-            return Rectangle(5, ploshcha // 5)
-        elif not ploshcha % 3:
-            return Rectangle(3, ploshcha // 3)
-        elif not ploshcha % 2:
-            return Rectangle(2, ploshcha // 2)
+    def finding_width_and_height(area: int):
+        if not area % 5:
+            return Rectangle(5, area // 5)
+        elif not area % 3:
+            return Rectangle(3, area // 3)
+        elif not area % 2:
+            return Rectangle(2, area // 2)
         else:
-            return Rectangle(1, ploshcha)
+            return Rectangle(1, area)
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.get_square() == other.get_square()
 
     def __add__(self, other):
